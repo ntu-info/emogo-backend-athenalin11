@@ -9,20 +9,18 @@
 
 **主要資料匯出 API（包含所有三種資料類型）:**
 ```
-https://your-app-name.onrender.com/export/all
+https://emogo-backend-athenalin11.onrender.com/export/all
 ```
 
 **個別資料類型匯出 API:**
-- Vlogs 資料: `https://your-app-name.onrender.com/export/vlogs`
-- 情感資料: `https://your-app-name.onrender.com/export/sentiments`
-- GPS 座標: `https://your-app-name.onrender.com/export/gps`
+- Vlogs 資料: `https://emogo-backend-athenalin11.onrender.com/export/vlogs`
+- 情感資料: `https://emogo-backend-athenalin11.onrender.com/export/sentiments`
+- GPS 座標: `https://emogo-backend-athenalin11.onrender.com/export/gps`
 
 **API 文件（互動式測試介面）:**
 ```
-https://your-app-name.onrender.com/docs
+https://emogo-backend-athenalin11.onrender.com/docs
 ```
-
-> **注意**: 請將 `your-app-name` 替換為您在 Render 上實際部署的應用程式名稱。
 
 ## 📊 資料類型
 
@@ -109,9 +107,9 @@ https://your-app-name.onrender.com/docs
 ### 3. 測試部署
 
 部署完成後，訪問以下網址測試：
-- `https://your-app-name.onrender.com/` - 檢查 API 是否運作
-- `https://your-app-name.onrender.com/docs` - 查看 API 文件
-- `https://your-app-name.onrender.com/health` - 檢查資料庫連接狀態
+- `https://emogo-backend-athenalin11.onrender.com/` - 檢查 API 是否運作
+- `https://emogo-backend-athenalin11.onrender.com/docs` - 查看 API 文件
+- `https://emogo-backend-athenalin11.onrender.com/health` - 檢查資料庫連接狀態
 
 ## 📝 本地開發
 
@@ -137,7 +135,7 @@ uvicorn main:app --reload
 
 ### 新增 Vlog
 ```bash
-curl -X POST "https://your-app-name.onrender.com/vlogs" \
+curl -X POST "https://emogo-backend-athenalin11.onrender.com/vlogs" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": "user123",
@@ -149,7 +147,7 @@ curl -X POST "https://your-app-name.onrender.com/vlogs" \
 
 ### 新增情感資料
 ```bash
-curl -X POST "https://your-app-name.onrender.com/sentiments" \
+curl -X POST "https://emogo-backend-athenalin11.onrender.com/sentiments" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": "user123",
@@ -161,7 +159,7 @@ curl -X POST "https://your-app-name.onrender.com/sentiments" \
 
 ### 新增 GPS 座標
 ```bash
-curl -X POST "https://your-app-name.onrender.com/gps" \
+curl -X POST "https://emogo-backend-athenalin11.onrender.com/gps" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": "user123",
@@ -173,7 +171,7 @@ curl -X POST "https://your-app-name.onrender.com/gps" \
 
 ### 匯出所有資料
 ```bash
-curl "https://your-app-name.onrender.com/export/all"
+curl "https://emogo-backend-athenalin11.onrender.com/export/all"
 ```
 
 ## 🔧 技術棧
