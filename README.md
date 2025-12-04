@@ -5,8 +5,7 @@
 
 > 一個使用 FastAPI 和 MongoDB 建立的情緒日誌後端系統，用於收集和管理使用者的影音日誌（Vlogs）、情感資料（Sentiments）和 GPS 座標資訊。
 
-**作者**: athenalin11  
-**課程**: NTU 資訊所  
+**作者**: athenalin11   
 **部署狀態**: ✅ Live on Render  
 **資料庫**: MongoDB Atlas
 
